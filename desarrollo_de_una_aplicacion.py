@@ -19,16 +19,19 @@ class Estudiante:
             return 0
         return sum(self.calificaciones) / len(self.calificaciones)
 
-        
-# Crear un estudiante
-alumno1 = Estudiante("Carlos", "2026001")
 
-# Agregar calificaciones
-alumno1.agregar_calificacion(90)
-alumno1.agregar_calificacion(80)
 
-# Mostrar información
-print("Nombre:", alumno1.nombre)
-print("Matrícula:", alumno1.matricula)
-print("Promedio:", alumno1.calcular_promedio())
+# Prueba del programa
+if __name__ == "__main__":
 
+    # Crear un estudiante
+    alumno1 = Estudiante("Carlos", "2026001")
+
+    # Agregar calificaciones
+    alumno1.agregar_calificacion(90)
+    alumno1.agregar_calificacion(80)
+
+    # Mostrar resultados
+    print("Nombre:", alumno1.nombre)
+    print("Matrícula:", alumno1.matricula)
+    print("Promedio:", alumno1.calcular_promedio())
