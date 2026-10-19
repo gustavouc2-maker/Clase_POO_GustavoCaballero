@@ -17,5 +17,18 @@ class Estudiante:
     def calcular_promedio(self):
         if len(self.calificaciones) == 0:
             return 0
-
         return sum(self.calificaciones) / len(self.calificaciones)
+
+        
+# Crear un estudiante
+alumno1 = Estudiante("Carlos", "2026001")
+
+# Agregar calificaciones
+alumno1.agregar_calificacion(90)
+alumno1.agregar_calificacion(80)
+
+# Mostrar información
+print("Nombre:", alumno1.nombre)
+print("Matrícula:", alumno1.matricula)
+print("Promedio:", alumno1.calcular_promedio())
+
